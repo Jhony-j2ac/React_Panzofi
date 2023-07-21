@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { HeaderComponent } from './components/headerComponent';
+import { FooterComponent } from './components/footerComponent';
+import logo from './static/Logo.png';
+import { LoginComponent } from './components/loginComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component{
+  
+  render(){
+
+  
+
+    return (
+      <div>
+        <HeaderComponent></HeaderComponent>
+        {this.state.details.map((output, id)=>(
+          <div>{output.name} {output.lastname}</div>
+        ))}
+        <LoginComponent></LoginComponent>
+        <FooterComponent></FooterComponent>
+
+      </div>
+
+    )
+  }
 }
 
 export default App;
