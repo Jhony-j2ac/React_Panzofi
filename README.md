@@ -19,8 +19,11 @@ SPA
 
 ### Componentes
 headerComponent / footerComponent # encabezado y pie de pagina
+
 adminComponent / Vista de analitica admin
+
 visitorComponent / Vista de interfaz de usuarios y botones
+
 loginComponent / Componente de inicio
 
 # Pendientes
