@@ -4,6 +4,9 @@ import { HeaderComponent } from './components/headerComponent';
 import { FooterComponent } from './components/footerComponent';
 import logo from './static/Logo.png';
 import { LoginComponent } from './components/loginComponent';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { AdminComponent } from './components/adminComponent';
+import { VisitorComponent } from './components/visitorComponent';
 
 
 
@@ -14,15 +17,16 @@ class App extends React.Component{
   
 
     return (
-      <div>
+      <BrowserRouter>
         <HeaderComponent></HeaderComponent>
-        {this.state.details.map((output, id)=>(
-          <div>{output.name} {output.lastname}</div>
-        ))}
-        <LoginComponent></LoginComponent>
+        <Routes>
+          <Route path='/' element={<LoginComponent />}></Route>
+          <Route path='/Admin' element={<AdminComponent />}></Route>
+          <Route path='/Visitor' element={<VisitorComponent />}></Route>
+        </Routes>
         <FooterComponent></FooterComponent>
 
-      </div>
+      </BrowserRouter>
 
     )
   }

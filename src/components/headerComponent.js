@@ -3,8 +3,10 @@ import { Helmet } from 'react-helmet';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../static/Logo.png';
+import { useNavigate } from 'react-router-dom';
 
 export const HeaderComponent = () => {
+    const navigate = useNavigate();
     const rootStyle = {
         backgroundImage: `url(${logo})`,
         backgroundSize: 'contain',
@@ -16,6 +18,11 @@ export const HeaderComponent = () => {
         position: 'fixed',
         zIndex: -9999999
       };
+
+    const logout = ()=>{
+        localStorage.clear();
+        navigate('/');
+    }
   return (
     <header>
         
@@ -34,7 +41,7 @@ export const HeaderComponent = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Inicio</a>
+                            <a className="nav-link" href="#" onClick={logout}>logout</a>
                         </li>
                         
                     </ul>
