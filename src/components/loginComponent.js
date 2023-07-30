@@ -32,7 +32,7 @@ export const LoginComponent = () => {
                 localStorage.setItem("type", data.type)
                 localStorage.setItem("session", data.session)
 
-                if(data.type == 2){
+                if(data.type === 2){
                     navigate('/Admin');
                 }else{
                     navigate('/Visitor');

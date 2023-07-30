@@ -1,6 +1,6 @@
-import React , { useState } from 'react';
+ import React  from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,7 +9,6 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
 class AdminComponent extends React.Component{
-    
     
     
     state  = { 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../static/Logo.png';
@@ -29,7 +28,7 @@ export const HeaderComponent = () => {
     
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                     <img src={logo}  alt="Logo" width="30" height="30" className="d-inline-block align-top"></img>
                 </a>
 
@@ -41,7 +40,7 @@ export const HeaderComponent = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={logout}>logout</a>
+                            <a className="nav-link" href="/" onClick={logout}>logout</a>
                         </li>
                         
                     </ul>
