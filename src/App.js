@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { HeaderComponent } from './components/headerComponent';
 import { FooterComponent } from './components/footerComponent';
-// import logo from './static/Logo.png';
+import logo from './static/Logo.png';
 import { LoginComponent } from './components/loginComponent';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { AdminComponent } from './components/adminComponent';
@@ -17,7 +17,7 @@ class App extends React.Component{
   
 
     return (
-      <BrowserRouter>
+      <BrowserRouter  basename="/React_Panzofi">
         <HeaderComponent></HeaderComponent>
         <Routes>
           <Route path='/' element={<LoginComponent />}></Route>
