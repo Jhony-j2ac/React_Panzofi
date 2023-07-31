@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_Panzofi/static/css/main.dd929966.css",
+    "main.js": "/React_Panzofi/static/js/main.e6157208.js",
+    "static/js/787.e23f4659.chunk.js": "/React_Panzofi/static/js/787.e23f4659.chunk.js",
+    "index.html": "/React_Panzofi/index.html",
+    "main.dd929966.css.map": "/React_Panzofi/static/css/main.dd929966.css.map",
+    "main.e6157208.js.map": "/React_Panzofi/static/js/main.e6157208.js.map",
+    "787.e23f4659.chunk.js.map": "/React_Panzofi/static/js/787.e23f4659.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd929966.css",
+    "static/js/main.e6157208.js"
+  ]
+}
